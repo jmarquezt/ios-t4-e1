@@ -26,7 +26,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     override init() {
         super.init()
         // Create the data model.
-        pageData = ["1","2","3"]
+        pageData = ["1","2","3","4"]
         //let dateFormatter = NSDateFormatter()
         //pageData = dateFormatter.monthSymbols
     }
@@ -72,6 +72,53 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
             return nil
         }
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
+    }
+    
+    func pageViewController(pageViewController: UIPageViewController,
+        spineLocationForInterfaceOrientation orientation:
+        UIInterfaceOrientation) -> UIPageViewControllerSpineLocation {
+            // Set the spine position to "min" and the page view controller's
+            //view controllers array to contain just one view controller. Setting
+            //the spine position to 'UIPageViewControllerSpineLocationMid' in
+            //landscape orientation sets the doubleSided property to true, so set it
+            //to false here.
+            if(UIInterfaceOrientationIsLandscape(orientation)){
+                
+                let currentViewController =
+                pageViewController.viewControllers![0] as! DataViewController
+                var viewControllers:NSArray = [currentViewController]
+                let indexOfCurrentViewController =
+                self.indexOfViewController(currentViewController)
+                if(indexOfCurrentViewController == 0 ||
+                    indexOfCurrentViewController % 2 == 0 ) {
+                        let nextViewController:UIViewController =
+                        self.pageViewController(pageViewController,
+                            viewControllerAfterViewController: currentViewController)!
+                        viewControllers =
+                            [currentViewController,nextViewController]
+                }
+                else{
+                    let previousViewController:UIViewController =
+                    self.pageViewController(pageViewController,
+                        viewControllerBeforeViewController: currentViewController)!
+                    viewControllers =
+                        [previousViewController,currentViewController]
+                }
+                pageViewController.setViewControllers(viewControllers as? [UIViewController],
+                    direction: UIPageViewControllerNavigationDirection.Forward, animated:
+                    true, completion: nil)
+                return UIPageViewControllerSpineLocation.Mid
+            }
+            else{
+                let currentViewController =
+                pageViewController.viewControllers![0] as UIViewController
+                let viewControllers: NSArray = [currentViewController]
+                pageViewController.setViewControllers(viewControllers as? [UIViewController],
+                    direction: .Forward, animated: true, completion: {done in })
+                
+                pageViewController.doubleSided = false
+                return UIPageViewControllerSpineLocation.Min
+            }
     }
 
 }

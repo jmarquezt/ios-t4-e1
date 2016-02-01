@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="703-4V-yAM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="703-4V-yAM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -38,7 +38,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="cF2-Le-7mQ">
                                 <rect key="frame" x="20" y="20" width="560" height="17"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s1b-V9-EN7">
@@ -77,29 +77,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ryo-3i-ZOf">
-                                <rect key="frame" x="20" y="20" width="560" height="17"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nr-5p-dT1">
-                                <rect key="frame" x="279" y="45" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="02-Blue-Bird-Retina-HD-Wallpapers-for-iPhone-6" translatesAutoresizingMaskIntoConstraints="NO" id="HZZ-EJ-7Nt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.97826086960000003" green="0.0" blue="0.040154619717463286" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="Ryo-3i-ZOf" firstAttribute="leading" secondItem="Iod-FF-fuW" secondAttribute="leading" constant="20" symbolic="YES" id="BGD-EJ-xzo"/>
-                            <constraint firstAttribute="trailing" secondItem="Ryo-3i-ZOf" secondAttribute="trailing" constant="20" symbolic="YES" id="Eyh-f8-ChO"/>
-                            <constraint firstItem="Ryo-3i-ZOf" firstAttribute="top" secondItem="Iod-FF-fuW" secondAttribute="top" constant="20" symbolic="YES" id="gOQ-3V-x1o"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="dataLabel" destination="Ryo-3i-ZOf" id="mzX-7r-lJz"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pax-T3-oO7" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,29 +100,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Cf-B5-XMn">
-                                <rect key="frame" x="20" y="20" width="560" height="17"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1X-mU-urf">
-                                <rect key="frame" x="279" y="45" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1387292116_mario-mushroom-in-death_iphone" translatesAutoresizingMaskIntoConstraints="NO" id="clM-mI-h8x">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.049552457581700425" green="0.97826086960000003" blue="0.11725806244453467" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="9Cf-B5-XMn" secondAttribute="trailing" constant="20" symbolic="YES" id="8lA-ue-aLF"/>
-                            <constraint firstItem="9Cf-B5-XMn" firstAttribute="leading" secondItem="yjs-pE-IqN" secondAttribute="leading" constant="20" symbolic="YES" id="HMT-ds-1Dd"/>
-                            <constraint firstItem="9Cf-B5-XMn" firstAttribute="top" secondItem="yjs-pE-IqN" secondAttribute="top" constant="20" symbolic="YES" id="SIl-q0-ZzH"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="dataLabel" destination="9Cf-B5-XMn" id="Aho-vv-3gX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9n0-6a-ZDs" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,33 +123,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="P2f-Xh-npi">
-                                <rect key="frame" x="20" y="20" width="560" height="17"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyd-T9-UH6">
-                                <rect key="frame" x="279" y="45" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1409759465_paris-in-the-fall_iphone" translatesAutoresizingMaskIntoConstraints="NO" id="krT-xH-wdB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.48710351091360354" blue="0.97826086960000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="P2f-Xh-npi" secondAttribute="trailing" constant="20" symbolic="YES" id="5Cf-Vu-5cC"/>
-                            <constraint firstItem="P2f-Xh-npi" firstAttribute="leading" secondItem="m38-bF-Pt3" secondAttribute="leading" constant="20" symbolic="YES" id="A64-de-HqY"/>
-                            <constraint firstItem="P2f-Xh-npi" firstAttribute="top" secondItem="m38-bF-Pt3" secondAttribute="top" constant="20" symbolic="YES" id="cU1-JH-RRC"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="dataLabel" destination="P2f-Xh-npi" id="ceO-lb-Jv3"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="034-3p-mf8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="173"/>
+            <point key="canvasLocation" x="1122" y="186"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="NTc-hy-FfL">
+            <objects>
+                <viewController storyboardIdentifier="DataViewController4" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y0u-3v-yUC" customClass="DataViewController" customModule="T4E1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xXi-0v-t3N"/>
+                        <viewControllerLayoutGuide type="bottom" id="mAI-A3-1QI"/>
+                    </layoutGuides>
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="m1n-T6-TfF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1401789542_superman-man-of-steel-logo_iphone" translatesAutoresizingMaskIntoConstraints="NO" id="Zhg-QT-IdH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92363587980910467" green="0.075286157016615715" blue="0.97826086960000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0tG-oG-Dap" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="294"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="02-Blue-Bird-Retina-HD-Wallpapers-for-iPhone-6" width="750" height="1334"/>
+        <image name="1387292116_mario-mushroom-in-death_iphone" width="750" height="1334"/>
+        <image name="1401789542_superman-man-of-steel-logo_iphone" width="750" height="1334"/>
+        <image name="1409759465_paris-in-the-fall_iphone" width="1080" height="1920"/>
+    </resources>
 </document>
